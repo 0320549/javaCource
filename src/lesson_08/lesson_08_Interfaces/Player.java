@@ -5,4 +5,5 @@ public interface Player {
     int counValuesOfAllCardOnHand();
     boolean needCard();
     void showCardsOnHand();
+    boolean isCroupie();
 }

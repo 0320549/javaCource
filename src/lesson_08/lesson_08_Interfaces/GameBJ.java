@@ -1,7 +1,9 @@
 package lesson_08.lesson_08_Interfaces;
 
+import lesson_08.models.Playeripl;
+
 public interface GameBJ {
-    void addPlayerInGame(Player player); // добавить игрока в игру
+    void addPlayerInGame(Playeripl player); // добавить игрока в игру
 
     void giveTwoCardsOnHand(); // Раздача 2 карт на старте
 
