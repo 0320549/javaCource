@@ -57,7 +57,7 @@ public class GameBJipl implements GameBJ {
             }
         }
             for (Playeripl player : playersInGames) {
-                if (player != null && player.isInGame()) {
+                if (player != null && player.isInGame() && !player.isCroupie()) {
                     player.showCardsOnHand();
                 }
         }
@@ -71,12 +71,6 @@ public class GameBJipl implements GameBJ {
                 }
             }
         }
-//        for (Playeripl player : playersInGames) {
-//            if (player != null && player.isInGame() && !player.isCroupie) {
-//                System.out.println("Победил игрок : ");
-//                player.showCardsOnHand();
-//            }
-//        }
 
     }
     public int countmPlayersInGame() {

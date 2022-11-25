@@ -9,8 +9,8 @@ public class Playeripl implements Player {
     //
 
     Card[] cardsOnHand = new Card[100];
-    boolean inGame;
-    boolean isCroupie = false;
+    boolean inGame = true;
+//    boolean isCroupie = false;
     String name;
 
     // constructor
@@ -60,6 +60,12 @@ public class Playeripl implements Player {
             }
         }
     }
+
+    @Override
+    public boolean isCroupie() {
+        return false;
+    }
+
     public boolean isInGame() {
         return inGame;
     }
@@ -68,13 +74,6 @@ public class Playeripl implements Player {
         this.inGame = inGame;
     }
 
-    public boolean isCroupie() {
-        return false;
-    }
-
-    public void setCroupie(boolean croupie) {
-        isCroupie = croupie;
-    }
 
     public String getName() {
         return name;
